@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}cOOci Coding{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Codingstyle.css') }}">
+{% endblock %}
+
+<!-- Content Section -->
+{% block content %}
+    <h1>coding Page</h1>
+
+    <!-- JavaScript files -->
+    <script src="{{ url_for('static', filename='js/CodingScript.js') }}" type="module"></script>
+{% endblock %}

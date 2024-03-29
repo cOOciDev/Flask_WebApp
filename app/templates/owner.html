@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}cOOci Owner{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/OwnerStyle.css') }}">
+{% endblock %}
+
+<!-- Content Section -->
+{% block content %}
+    <!-- Canvas Containers -->
+    <div class="canvas-container">
+        <p><a id="btn" class="mytxt" href="{{ url_for('havesomefun.havesomefun') }}"> Have Some fun </a></p>
+        <canvas id="canvas1"></canvas>
+    </div>
+    <div class="canvas-container">
+        <p><a id="btn" class="mytxt" href="{{ url_for('cOOciAcademy.cOOciAcademy') }}"> cOOci Academy </a></p>
+        <canvas id="canvas2"></canvas>
+    </div>
+    <div class="canvas-container">
+        <p><a id="btn" class="mytxt" href="{{ url_for('cOOciGames.cOOciGames') }}"> cOOci Games </a></p>
+        <canvas id="canvas3"></canvas>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="{{ url_for('static', filename='js/OwnerScript.js') }}" type="module"></script>
+{% endblock %}

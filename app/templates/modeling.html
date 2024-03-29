@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}cOOci Modeling{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ModelingStyle.css') }}">
+{% endblock %}
+
+<!-- Content Section -->
+{% block content %}
+    <h1>modeling Page</h1>
+    <p>This is modeling Page of the Flask web application.</p>
+
+    <!-- JavaScript files -->
+    <script src="{{ url_for('static', filename='js/ModelingScript.js') }}" type="module"></script>
+{% endblock %}

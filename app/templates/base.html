@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Your Website Title{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    {% block styles %}{% endblock %}
+</head>
+<body>
+
+    <!-- Sticky Header -->
+    <header>
+        <h1>Welcome to the Home Page</h1>
+        <p><a href="{{ url_for('home.home') }}">Go back to Home</a></p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p><a href="{{ url_for('contactUs.contactUs') }}">Go to ContactUs Page</a></p>
+        <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript files -->
+    <script src="{{ url_for('static', filename='js/AppScript.js') }}"></script>
+            
+</body>
+</html>

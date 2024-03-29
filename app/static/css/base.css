@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height of the body to 100% of the viewport height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.content {
+    flex: 1; /* Fill remaining vertical space */
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer {
+    background-color: #333;
+    color: #7cabad;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    /* Adjust styles for screens smaller than 600px wide */
+    header, footer {
+        font-size: 14px;
+    }
+    .content {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /* Adjust styles for screens smaller than 400px wide */
+    header, footer {
+        font-size: 12px;
+    }
+    .content {
+        padding: 5px;
+    }
+}

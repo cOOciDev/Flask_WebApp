@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block title %}cOOci Home{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/HomeStyle.css') }}">
+{% endblock %}
+
+<!-- Content Section -->
+{% block content %}
+
+    <!-- Canvas Containers -->
+    <div class="canvas-container">
+        <p><a id="btn" class="mytxt" href="{{ url_for('owner.owner') }}">Go to Owner Page</a></p>
+        <canvas id="canvas1"></canvas>
+    </div>
+    <div class="canvas-container">
+        <p><a id="btn" class="mytxt" href="{{ url_for('modeling.modeling') }}">Go to Modeling Page</a></p>
+        <canvas id="canvas2"></canvas>
+    </div>
+    <div class="canvas-container">
+        <p><a id="btn" class="mytxt" href="{{ url_for('animating.animating') }}">Go to Animating Page</a></p>
+        <canvas id="canvas3"></canvas>
+    </div>
+    <div class="canvas-container">
+        <p><a id="btn" class="mytxt" href="{{ url_for('coding.coding') }}">Go to Coding Page</a></p>
+        <canvas id="canvas4"></canvas>
+    </div>
+    <div class="canvas-container">
+        <p><a id="btn" class="mytxt" href="{{ url_for('news.news') }}">Go to News Page</a></p>
+        <canvas id="canvas5"></canvas>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="{{ url_for('static', filename='js/HomeScript.js') }}" type="module"></script>
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}cOOci Animating{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/AnimatingStyle.css') }}">
+{% endblock %}
+
+<!-- Content Section -->
+{% block content %}
+    <h1>Animating Page</h1>
+
+    <!-- JavaScript files -->
+    <script src="{{ url_for('static', filename='js/AnimatingScript.js') }}" type="module"></script>
+{% endblock %}

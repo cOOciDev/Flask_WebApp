@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}cOOci Products{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cOOciGamesStyle.css') }}">
+{% endblock %}
+
+<!-- Content Section -->
+{% block content %}
+    <!-- Canvas Containers -->
+    <div class="canvas-container">
+        <h1 id="btn" class="mytxt" >cOOci Products Page </h1>
+        <canvas id="canvas1"></canvas>
+    </div>
+
+    <!-- JavaScript files -->
+    <script src="{{ url_for('static', filename='js/cOOciGamesScript.js') }}" type="module"></script>
+{% endblock %}

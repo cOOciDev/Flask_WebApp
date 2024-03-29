@@ -1,0 +1,65 @@
+.canvas-container {
+    flex: 1; /* Each canvas container takes up equal vertical space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ensure proper positioning for absolutely positioned elements */
+}
+
+canvas {
+    z-index: 1;
+    /* Set canvas height to 50% of the viewport height */
+    height: 50vh;
+    width: 100%; /* Take up full width of the container */
+}
+
+.mytxt {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-decoration: none;
+}
+
+#btn{
+    color: black;
+}
+
+#canvas1{
+    background-color: antiquewhite;
+    left: 50%;
+    width: 100%;
+
+}
+
+#canvas2{
+    background-color: rgb(236, 243, 198);
+    left: 50%;
+    width: 100%;
+
+}
+
+#canvas3{
+    background-color: antiquewhite;
+    left: 50%;
+    width: 100%;
+
+}
+
+#canvas4{
+    background-color: rgb(236, 243, 198);
+    left: 50%;
+    width: 100%;
+
+}
+
+#canvas5{
+    background-color: antiquewhite;
+    left: 50%;
+    width: 100%;
+
+}
+
+

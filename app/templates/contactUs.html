@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}contact us{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/ContactUsStyle.css') }}">
+{% endblock %}
+
+<!-- Content Section -->
+{% block content %}
+    <h1>contact us Page</h1>
+
+    <!-- JavaScript files -->
+    <script src="{{ url_for('static', filename='js/ContactUsScript.js') }}" type="module"></script>
+{% endblock %}
